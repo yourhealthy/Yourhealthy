@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindStart | Solusi Digital Kesehatan Mental</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>MindStart</h1>
+        <p>Solusi Digital Pertamaku untuk Kesehatan Mental</p>
+    </header>
+
+    <section class="hero">
+        <h2>Mulai Kenali Dirimu Lebih Baik</h2>
+        <p>Aplikasi web sederhana untuk membantu memantau suasana hati, journaling, dan edukasi kesehatan mental.</p>
+        <a href="#tracker" class="btn">Mulai Sekarang</a>
+    </section>
+
+    <section id="problem" class="section">
+        <h2>🌿 Masalah yang Diangkat</h2>
+        <p>Banyak remaja dan dewasa muda merasa stres, cemas, atau kurang mengenal kondisi emosinya, namun belum menemukan cara sederhana untuk memantau kesehatan mental.</p>
+    </section>
+
+    <section id="solution" class="section">
+        <h2>💡 Solusi Digital: MindStart</h2>
+        <ul>
+            <li><b>Mood Tracker</b> sederhana untuk mencatat suasana hati.</li>
+            <li><b>Jurnal harian</b> untuk menulis apa yang kamu rasakan.</li>
+            <li><b>Edukasi singkat</b> tentang kesehatan mental.</li>
+        </ul>
+    </section>
+
+    <section id="tracker" class="section">
+        <h2>📘 Mood Tracker</h2>
+        <p>Pilih suasana hatimu hari ini:</p>
+
+        <div class="mood-buttons">
+            <button onclick="saveMood('Senang')">😊 Senang</button>
+            <button onclick="saveMood('Biasa')">😐 Biasa</button>
+            <button onclick="saveMood('Sedih')">😢 Sedih</button>
+        </div>
+
+        <p id="savedMessage"></p>
+    </section>
+
+    <section id="about" class="section">
+        <h2>👤 Tentang Pembuat</h2>
+        <p>Website ini dibuat sebagai “Solusi Digital Pertamaku” untuk lomba, dengan tujuan meningkatkan kesadaran tentang pentingnya kesehatan mental.</p>
+    </section>
+
+    <footer>
+        <p>© 2025 MindStart · Dibuat untuk Lomba Solusi Digital</p>
+    </footer>
+
+    <script>
+        function saveMood(mood) {
+            document.getElementById("savedMessage").innerHTML =
+                "Kamu mencatat suasana hati: <b>" + mood + "</b>. Tetap semangat!";
+        }
+    </script>
+
+</body>
+</html>
